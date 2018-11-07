@@ -1,0 +1,31 @@
+//error 
+.add-option-error {
+    color: $light-purple;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+}
+
+.add-option {
+ display: flex;
+ padding: $m-size;
+}
+
+.add-option__input {
+    flex-grow: 1;
+    background: $back-ground-w2;
+    border: none;
+    border-bottom: .3rem solid darken($back-ground-w2, 10%);
+    margin-right: $s-size;
+    color: $light-purple;
+    padding: $s-size;
+}
+
+@media (max-width: $desktop-break-point) {
+    .add-option {
+        flex-direction: column;
+    }
+    .add-option__input {
+        margin: 0 0 $s-size  0;
+    }
+}
